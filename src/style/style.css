@@ -1,0 +1,150 @@
+:root{
+    --principal: #272B28; 
+    --amarelo: #FECB00;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: #F5F5F5;
+}
+
+header{
+    background-color: var(--principal);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+header img{
+    width: 150px;
+}
+
+header h1{
+    color: var(--amarelo);
+    margin-left: 5px;
+    font-weight: bold;
+}
+
+.app{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+}
+
+section{
+    background-color: #fff;
+    box-shadow: 5px 5px 9px #80808095;
+    border-radius: 8px;
+    padding: 30px;
+    width: 600px;
+    color: #808080;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+
+section h2{
+    font-weight: 400;
+    padding-bottom: 20px
+}
+
+section p{
+    margin: 10px 0;
+}
+
+.textLeft{
+    text-align: left;
+}
+
+section label{
+    display: none;
+}
+
+section textarea{
+    display: block;
+    padding: 10px;
+    width: 100%;
+    height: 150px;
+    max-width: 100%;
+    min-width: 100%;
+    max-height: 150px;
+    min-height: 150px;
+}
+
+section button{
+    cursor: pointer;
+    background-color: var(--principal);
+    color: var(--amarelo);
+    border: 2px solid var(--amarelo);
+    border-radius: 10px;
+    text-transform: uppercase;
+    padding: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+footer{
+    background-color: var(--principal);
+    padding: 10px;
+    text-align: center;
+    color: var(--amarelo);
+    height: 400px;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+footer a{
+    color: #a5a4a4;
+}
+
+.resultado{
+    position: absolute;
+    top:0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(46 51 47 / 85%);
+    transition: 0.5s;
+}
+
+.resultado.mostrarResultado{
+    left: 0;
+    transition: 0.5s;
+}
+
+.resultado span{
+    float: right;
+    margin: 20px;
+    color:var(--amarelo);
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    border: solid var(--amarelo) 2px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.resultado p{
+    text-align: center;
+    color: var(--amarelo);
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
